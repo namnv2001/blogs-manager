@@ -1,5 +1,6 @@
-import BlogList from '../BlogList'
 import styles from './style.module.css'
+
+import BlogList from '../BlogList'
 import useFetch from './../../hooks/useFetch'
 
 function Home() {

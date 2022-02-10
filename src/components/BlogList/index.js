@@ -1,5 +1,6 @@
-import styles from './style.module.css'
 import { Link } from 'react-router-dom'
+
+import styles from './style.module.css'
 
 function BlogList({ blogs }) {
   return (

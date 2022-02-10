@@ -1,4 +1,5 @@
 import { useHistory, useParams } from 'react-router'
+
 import styles from './style.module.css'
 import useFetch from './../../hooks/useFetch'
 
@@ -20,18 +21,22 @@ function BlogDetail() {
     <div className={styles['blog-detail']}>
       {blog && (
         <div>
-          <h2 className={styles['title']}>{blog.data.title}</h2>
-          <p className={styles['author']}>Written by: {blog.data.author}</p>
+          <div className={styles['header']}>
+            <div>
+              <h2 className={styles['title']}>{blog.data.title}</h2>
+              <p className={styles['author']}>Written by: {blog.data.author}</p>
+            </div>
+            <button
+              onClick={(e) => {
+                e.preventDefault()
+                handleDelete(blog.id)
+              }}
+            >
+              Delete
+            </button>
+          </div>
           <div className={styles['line']}></div>
           <p>{blog.data.body}</p>
-          <button
-            onClick={(e) => {
-              e.preventDefault()
-              handleDelete(blog.id)
-            }}
-          >
-            Delete
-          </button>
         </div>
       )}
     </div>

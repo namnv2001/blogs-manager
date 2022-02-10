@@ -1,8 +1,9 @@
-import './App.css'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+import './main.css'
 import Navbar from './components/Nav'
 import Home from './components/HomePage'
 import BlogDetail from './components/BlogDetails'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NewBlog from './components/NewBlog'
 
 function App() {

@@ -8,6 +8,15 @@
 body {
   margin: 0;
   font-family: 'Open Sans', serif;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+}
+
+.content {
+  margin-top: 3.5rem;
 }

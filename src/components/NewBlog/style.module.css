@@ -12,6 +12,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   margin-top: 1rem;
 }
 .form > input,
@@ -23,7 +24,6 @@
   font-size: 0.9rem;
   border: 1px solid;
   border-radius: 5px;
-  margin-bottom: 0.5rem;
   resize: vertical;
 }
 .submit {
@@ -34,4 +34,9 @@
 }
 .submit:hover {
   cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+  text-align: left;
 }
